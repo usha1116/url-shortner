@@ -4,16 +4,20 @@ interface IHeaderProps {
 }
 
 const Header: React.FunctionComponent<IHeaderProps> = () => {
-  return(
-    <div className='bg-slate-900'>
-        <div className='container p-2 mx-auto'>
-            <nav className='py-5'>
-                <div className='text-base text-white'>URL Shortener</div>
-            </nav>
+  return (
 
-        </div>
+    <div className="bg-slate-900">
+      <div className="container mx-auto p-2">
+        <nav className="flex justify-between items-center py-4">
+          <div className="text-lg sm:text-xl font-semibold text-white">
+            URL Shortener
+          </div>
+        </nav>
+      </div>
     </div>
-  ) ;
+
+
+  );
 };
 
 export default Header;

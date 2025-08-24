@@ -68,7 +68,7 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
     }
     return (
         <>
-            <div className="container pt-2 pb-10">
+            {/* <div className="container pt-2 pb-10">
                 <div className="relative overflow-x-auto shadow-sm sm:rounded-lg">
                     <table className="w-full table-fixed text-sm text-left rtl:text-right text-gray-500">
                         <thead className='text-md uppercase text-gray-50 bg-gray-700'>
@@ -83,7 +83,24 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
                     </table>
 
                 </div>
-            </div>
+            </div> */}
+
+            <div className="container pt-2 pb-10">
+  <div className="relative overflow-x-auto shadow-sm sm:rounded-lg">
+    <table className="w-full text-xs sm:text-sm text-left rtl:text-right text-gray-500">
+      <thead className="text-xs sm:text-sm uppercase text-gray-50 bg-gray-700">
+        <tr>
+          <th scope="col" className="px-2 sm:px-6 py-3 w-6/12 truncate">Full Url</th>
+          <th scope="col" className="px-2 sm:px-6 py-3 w-3/12">Short Url</th>
+          <th scope="col" className="px-2 sm:px-6 py-3">Clicks</th>
+          <th scope="col" className="px-2 sm:px-6 py-3">Action</th>
+        </tr>
+      </thead>
+      <tbody>{renderTableData()}</tbody>
+    </table>
+  </div>
+</div>
+
         </>
     );
 };

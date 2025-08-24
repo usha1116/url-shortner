@@ -20,7 +20,9 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
         fullUrl : fullUrl,
       });
       setFullUrl('');
-      updateReloadState();
+      //updateReloadState();
+      updateReloadState?.();
+
     } catch (error) {
       console.log
     }
